@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+    font-family: 'LotteMartDream', sans-serif;
+}
+body {
+    min-height: 100vh;
+    min-width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'LotteMartDream', sans-serif;
+}
+
+
+/*all*/
+.layout {
+    margin : 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+
+/*head*/
+.head {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+}
+.head .logo {
+    min-width: 20vh;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+.head .menu {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+.head .button {
+    text-align: center;
+}
+.head .button a {
+    padding: 15px 10px;
+}
+.head .button :hover {
+    background-color: rgb(209, 208, 208);
+}
+.head .admin {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/*main*/
+/*address*/
+.address {
+    text-align: left;
+    background-color: rgb(228, 222, 250);
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    
+    font-weight: bold;
+}
+.address a{
+    color: rgb(45, 45, 194);
+}
+
+
+/*search*/
+.search_box {
+    text-align: left;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.search_box_title {
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+}
+.search_box_input {
+    padding: 15px 10px;
+}
+.search_box_input span {
+    font-weight: bold;
+    margin: 0px 10px 0px 5px;
+}
+.search_box_input .day {
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+}
+.search_box_input select {
+    padding: 5px 10px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+}
+.search_box_input .goods {
+    width: 200px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+}
+.search_box_input .button {
+    color: black;
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+}
+
+
+/*button*/
+.button_box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.button_insert {
+    background-color: rgb(27, 27, 177);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+.button_delete {
+    background-color: rgb(209, 73, 49);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+.button_regi {
+    background-color: rgb(255, 187, 60);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+
+/*total*/
+.button_box .total_price {
+    font-weight: bold;
+}
+.button_box .total_count {
+    font-size: 12px;
+    color: white;
+    border: none;
+    padding: 1px 5px;
+    border-radius: 10px;
+    background-color: rgb(104, 104, 104);
+
+}
+
+
+/*list*/
+.content {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.top {
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(83, 37, 250);
+}
+.middle {
+    display: flex;
+    text-align: center;
+    font-weight: 200;
+    border: 1px solid black;
+}
+.day {
+    width: 25%;
+    text-align: left;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.day span {
+    margin-left: 5px;
+}
+.store {
+    width: 10%;
+    text-align: left;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.store span {
+    margin-left: 5px;
+}
+.goods {
+    width: 25%;
+    text-align: left;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.goods span {
+    margin-left: 5px;
+}
+.cost {
+    width: 10%;
+    text-align: right;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.cost span {
+    margin-right: 5px;
+}
+.count {
+    width: 10%;
+    text-align: right;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.count span {
+    margin-right: 5px;
+}
+.price {
+    width: 10%;
+    text-align: right;
+    padding: 5px 0px;
+    border-right: 1px solid black;
+}
+.price span {
+    margin-right: 5px;
+}
+.tax {
+    width: 10%;
+    padding: 5px 0px;
+    text-align: right;
+}
+.tax span {
+    margin-right: 5px;
+}
+
+
+/*page button*/
+.page {
+    display: flex;
+    padding-top: 10px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+.page ul {
+    display: flex;
+    padding: 8px 0px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+.page li {
+    list-style: none;
+}
+.page li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(45, 45, 194);
+    padding: 6px 12px;
+    border-right: 1px solid rgb(197, 197, 197);
+}
+.page li .a {
+    border: none;
+}
+.page li a:hover {
+    color: white;
+    background-color: rgb(45, 45, 194);
+}
+
+
+
+/*footer*/
+.footer {
+    display: flex;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    height: 50px;
+}
